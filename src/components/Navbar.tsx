@@ -16,14 +16,28 @@ const Navbar = () => {
             <span className="text-2xl font-bold text-primary">LandingLitz</span>
           </div>
           
-          <Button
-            onClick={() => window.open(whatsappUrl, "_blank")}
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-[0_0_20px_hsl(var(--primary)/0.5)] hover:shadow-[0_0_30px_hsl(var(--primary)/0.7)] transition-all duration-300"
-          >
-            <MessageCircle className="mr-2 h-5 w-5" />
-            Falar no WhatsApp
-          </Button>
+         <Button
+  onClick={() => window.open(whatsappUrl, "_blank")}
+  className="
+    bg-primary 
+    hover:bg-primary/90 
+    text-primary-foreground 
+    font-bold 
+    shadow-[0_0_20px_hsl(var(--primary)/0.5)] 
+    hover:shadow-[0_0_30px_hsl(var(--primary)/0.7)] 
+    transition-all 
+    duration-300
+    flex items-center justify-center
+    px-4 py-2
+  "
+>
+  {/* Ícone sempre visível */}
+  <MessageCircle className="h-5 w-5" />
+
+  {/* Texto visível apenas em telas médias pra cima */}
+  <span className="ml-2 hidden md:inline">Falar no WhatsApp</span>
+</Button>
+
         </div>
       </div>
     </nav>

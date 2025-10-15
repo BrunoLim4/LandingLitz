@@ -57,7 +57,7 @@ const CTA = () => {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-12 py-7 shadow-[0_0_40px_hsl(var(--primary)/0.6)] hover:shadow-[0_0_60px_hsl(var(--primary)/0.9)] transition-all duration-300 animate-glow"
               >
-                Começar Agora pelo WhatsApp
+                Começar Agora
                 <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
               
